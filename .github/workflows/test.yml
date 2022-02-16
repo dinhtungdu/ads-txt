@@ -25,7 +25,7 @@ jobs:
     - name: Set up WP environment
       run: npm run env:start
     - name: Setup pretty permalink
-      run: npm run wp-env run tests-cli "wp rewrite structure '/%postname%'"
+      run: npm run wp-env run tests-cli "wp rewrite structure '/%postname%/'"
     - name: Test
       run: npm run cypress:run
     - name: Store test screenshots
