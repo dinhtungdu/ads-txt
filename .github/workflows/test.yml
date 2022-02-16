@@ -28,13 +28,13 @@ jobs:
       run: npm run cypress:run
     - name: Store test screenshots
       uses: actions/upload-artifact@v2
-      if: failure()
+      if: always()
       with:
         name: screenshots
         path: tests/cypress/screenshots
     - name: Store test videos
       uses: actions/upload-artifact@v2
-      if: failure()
+      if: always()
       with:
         name: videos
         path: tests/cypress/videos
