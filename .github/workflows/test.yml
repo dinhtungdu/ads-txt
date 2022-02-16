@@ -32,9 +32,9 @@ jobs:
       with:
         name: screenshots
         path: tests/cypress/screenshots
-    - name: Store test video
+    - name: Store test videos
       uses: actions/upload-artifact@v2
       if: failure()
       with:
-        name: video 
-        path: tests/cypress/video
+        name: videos
+        path: tests/cypress/videos
