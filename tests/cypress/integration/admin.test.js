@@ -2,7 +2,7 @@ describe("Admin can login and make sure plugin is activated", () => {
   it("Permalink structure works", () => {
     cy.visitAdminPage( `options-permalink.php` );
     cy.get( 'h1' ).should("have.text", "Permalink Settings");
-    cy.get( '#permalink_structure' ).should("have.value", type);
+    cy.get( '#permalink_structure' ).should("have.value", "/%postname%/");
     cy.visit("/hello-world");
   });
 
