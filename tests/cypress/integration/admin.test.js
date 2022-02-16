@@ -4,11 +4,13 @@ describe("Admin can login and make sure plugin is activated", () => {
   });
 
   it("Visit home page", () => {
+    cy.screenshot();
     cy.visit("/");
     cy.screenshot();
   });
 
   it("Permalink structure works", () => {
+    cy.screenshot();
     cy.visit("/hello-world/");
     cy.screenshot();
   });
