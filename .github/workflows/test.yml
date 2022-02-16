@@ -28,6 +28,7 @@ jobs:
       run: npm run cypress:run
     - name: Store test screenshots
       uses: actions/upload-artifact@v2
+      if: failure()
       with:
         name: screenshots
         path: tests/cypress/screenshots
