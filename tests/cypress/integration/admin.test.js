@@ -5,6 +5,7 @@ describe("Admin can login and make sure plugin is activated", () => {
 
   it("Visit home page", () => {
     cy.visit("/");
+    cy.screenshot();
   });
 
   it("Permalink structure works", () => {
