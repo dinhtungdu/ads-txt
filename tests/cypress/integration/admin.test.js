@@ -3,15 +3,11 @@ describe("Admin can login and make sure plugin is activated", () => {
     cy.setPermalinkStructure("/%postname%/");
   });
 
-  it("Visit home page", () => {
+  it("Permalink structure works", () => {
     cy.screenshot();
     cy.visit("/");
     cy.screenshot();
-  });
-
-  it("Permalink structure works", () => {
-    cy.screenshot();
-    cy.visit("/hello-world/");
+    cy.get('.wp-block-post-title a').click();
     cy.screenshot();
   });
 
