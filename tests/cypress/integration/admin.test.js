@@ -3,6 +3,10 @@ describe("Admin can login and make sure plugin is activated", () => {
     cy.setPermalinkStructure("/%postname%/");
   });
 
+  it("Visit home page", () => {
+    cy.visit("/");
+  });
+
   it("Permalink structure works", () => {
     cy.visit("/hello-world/");
   });
