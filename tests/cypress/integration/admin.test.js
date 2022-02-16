@@ -1,14 +1,9 @@
 describe("Admin can login and make sure plugin is activated", () => {
-  // before(() => {
-  //   cy.setPermalinkStructure("/%postname%/");
-  // });
-
   it("Permalink structure works", () => {
-    cy.screenshot();
-    cy.visit("/");
-    cy.screenshot();
-    cy.get('.wp-block-post-title a').click();
-    cy.screenshot();
+    cy.visitAdminPage( `options-permalink.php` );
+    cy.get( 'h1' ).should("have.text", "Permalink Settings");
+    cy.get( '#permalink_structure' ).should("have.value", type);
+    cy.visit("/hello-world");
   });
 
   it("Can deactivate plugin and activate it back", () => {
