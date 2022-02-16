@@ -1,5 +1,5 @@
 {
-  "plugins": [".", "wp-htaccess-editor"],
+  "plugins": [".", "https://downloads.wordpress.org/plugin/wp-htaccess-editor.1.70.zip"],
   "env": {
     "tests": {
       "mappings": {
