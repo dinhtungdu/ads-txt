@@ -1,7 +1,7 @@
 describe("Admin can login and make sure plugin is activated", () => {
-  before(() => {
-    cy.setPermalinkStructure("/%postname%/");
-  });
+  // before(() => {
+  //   cy.setPermalinkStructure("/%postname%/");
+  // });
 
   it("Permalink structure works", () => {
     cy.screenshot();
