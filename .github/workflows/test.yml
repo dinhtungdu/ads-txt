@@ -14,8 +14,7 @@ jobs:
     strategy:
       matrix:
         core:
-          - {name: 'WP trunk', version: 'WordPress/WordPress#master'}
-          - {name: 'WP latest', version: 'latest'}
+          - {name: 'WP trunk', version: 'https://wordpress.org/nightly-builds/wordpress-latest.zip'}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
