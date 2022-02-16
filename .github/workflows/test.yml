@@ -15,6 +15,7 @@ jobs:
       matrix:
         core:
           - {name: 'WP trunk', version: 'WordPress/WordPress#master'}
+          - {name: 'WP latest', version: 'latest'}
     steps:
     - name: Checkout
       uses: actions/checkout@v2

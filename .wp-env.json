@@ -1,5 +1,5 @@
 {
-  "plugins": ["."],
+  "plugins": [".", "wp-htaccess-editor"],
   "env": {
     "tests": {
       "mappings": {
